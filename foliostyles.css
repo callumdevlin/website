@@ -459,3 +459,64 @@ form input, form textarea{
         margin-left: 110px;
     }
 }
+
+.container11 {
+    width: 800px;
+    height: 250px;
+    position: absolute;
+    margin: auto;
+    margin-top: 125px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 25px;
+  }
+  
+  .items {
+    border-radius: 50%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 25px;
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  
+  .icon-wrapper, .project-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-wrapper img{
+    width: 40%;
+    transform: translateY(0px);
+    transition: all 0.6s;
+  }
+  
+  .icon-wrapper {
+    align-self: end;
+  }
+  
+  .project-name {
+    align-self: start;
+  }
+  
+  .project-name p {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #E5E6F1;
+    transform: translateY(0px);
+    transition: all 0.5s;
+  }
+  
+  .items:hover {
+    border: 3px solid #E5E6F1;
+  }
+  .items:hover .project-name p {
+    transform: translateY(-10px);
+  }
+  .items:hover .icon-wrapper img {
+    transform: translateY(5px);
+  }
