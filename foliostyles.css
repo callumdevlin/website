@@ -146,7 +146,9 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 60%;
-
+}
+.about-col-2 h1{
+    margin-left: -5px;
 }
 
 .sub-title{
