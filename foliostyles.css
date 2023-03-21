@@ -219,8 +219,8 @@ nav ul li a:hover::after{
 
 .project-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 200px;
     margin-top: 80px;
 }
 .project{
@@ -462,7 +462,7 @@ form input, form textarea{
     }
 }
 /* BEGIN CARD DESIGN */
-.hero {
+.skill {
     display: inline-block;
     position: relative;
     width: 260px;
@@ -475,11 +475,11 @@ form input, form textarea{
     margin-top: 125px;
   }
   
-  .hero-profile-img {
+  .skill-profile-img {
     height: 70%;
   }
   
-  .hero-description-bk {
+  .skill-description-bk {
     background-image: linear-gradient(0deg , #0cff04, #024705);
     border-radius: 30px;
     position: absolute;
@@ -491,14 +491,14 @@ form input, form textarea{
     transition: transform 0.5s;
   }
   
-  .second .hero-description-bk {
+  .second .skill-description-bk {
     background-image: linear-gradient(-20deg , #bb7413, #e7d25c)
   }
-  .third .hero-description-bk {
+  .third .skill-description-bk {
     background-image: linear-gradient(0deg , #3f5efb, #fc466b)
   }
   
-  .hero-logo {
+  .skill-logo {
     height: 80px;
     width: 80px;
     border-radius: 20px;
@@ -511,11 +511,11 @@ form input, form textarea{
     transition: transform 0.5s;
   }
   
-  .hero-logo img {
+  .skill-logo img {
     height: 100%;
   }
   
-  .hero-description {
+  .skill-description {
     position: absolute;
     color: #fff;
     font-weight: 600;
@@ -524,7 +524,7 @@ form input, form textarea{
     transition: transform 0.5s;
   }
   
-  .hero-btn {
+  .skill-btn {
     position: absolute;
     font-size: 24px;
     right: 10px;
@@ -533,16 +533,16 @@ form input, form textarea{
     transition: transform 0.5s;
   }
 
-  .hero-btn a {
+  .skill-btn a {
     color: #ffffff;
   }
 
-.hero:hover .hero-logo{
+.skill:hover .skill-logo{
     transform: translate(80%, -50%);
 }
-.hero:hover .hero-description{
+.skill:hover .skill-description{
     transform: translate(-80%, 50%);
 }
-.hero:hover .hero-description-bk{
+.skill:hover .skill-description-bk{
     transform: scaleY(280%)
 }
