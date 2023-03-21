@@ -177,54 +177,11 @@
 
 
     <!--JS-->
-<script>
+<script src="tabselector.js"></script>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-content");
-    function opentab(name){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-tab-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab-content");
-        }
-        event.currentTarget.classList.add("active-tab-link")
-        document.getElementById(name).classList.add("active-tab-content")
-    }
-</script>
-<script>
-    document.querySelectorAll('.blender img').forEach(Image =>{
-        Image.onclick = () =>{
-            document.querySelector('.popup-image').style.display = 'block';
-            document.querySelector('.popup-image img').src = Image.getAttribute('src');
-        }
-    });
-
-    document.querySelector('.popup-image span').onclick = () =>{
-        document.querySelector('.popup-image').style.display = 'none';
-    }
-</script>
-
-<script>
-    document.getElementById("submit-btn").addEventListener("click", function() {
-      document.getElementById("submit-btn").innerHTML = "Sent <i class='fas fa-check'></i>";
-    });
-</script>
-
+<script src="submitbtn.js"></script>
 <!--credit to Jamie Wilson for this script below-->
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwsK7xqdyYLASiT8Btoq_mZhZgoNRmxw5ibZ0MZRvsnIGD-LxgZKbuqcFZpstRxsLmh/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-
-</script>
-
+<script src="form.js"></script>
 
 </body>
 </html>
