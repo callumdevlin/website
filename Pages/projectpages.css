@@ -109,11 +109,14 @@ nav ul li a:hover::after{
 }
 
 .copyright{
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
+    color: #ffffff;
     text-align: center;
-    padding: 25px 0;
-    font-weight: 300;
-    margin-top: 80px;
+    padding: 20px;
+    font-weight:100;
 }
 
 /*SLIDER*/
@@ -234,4 +237,10 @@ nav ul li a:hover::after{
 }
 .tile-btn:hover{
     transform: scale(1.05);
+}
+
+.comingsoon{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 50px;
 }
