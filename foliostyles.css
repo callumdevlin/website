@@ -578,3 +578,9 @@ form input, form textarea{
         margin-top: 60px;
     }
 }
+
+@media(max-width:600){
+    .header-text{
+        align-content: center;
+    }
+}
