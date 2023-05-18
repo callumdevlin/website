@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="projectpages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="website icon" type="png" href="/Clogos/greenglassCcrop.png">
+    <script src="imageslider.js" defer></script>
 
     <title>Solidworks Projects</title>
 </head>
@@ -27,20 +28,23 @@
             <div id="myprojects">
                     <h1 class="sub-title">My<span class="RGB"> Solidworks</span> Models</h1>
             </div>
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img id="slide-1" src="/images/stirlingengine.JPG">
-                    <img id="slide-2" src="/images/locomotor explode.JPG">
-                    <img id="slide-3" src="/images/rotary.JPG">
-                    <img id="slide-4" src="/images/clamp.JPG">
+            <section aria-label="Photos">
+                <div class="slider" data-slider>
+                    <button class="slider-button prev" data-slider-button="prev">R</button>
+                    <button class="slider-button next" data-slider-button="next">L</button>
+                    <ul data-slides>
+                        <li class="slide">
+                            <img src="/images/stirlingengine.JPG">
+                        </li>
+                        <li class="slide" data-active>
+                            <img src="/images/locomotor explode.JPG">
+                        </li>
+                        <li class="slide">
+                            <img src="/images/rotary.JPG">
+                        </li>
+                    </ul>
                 </div>
-                <div class="solidworks slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                    <a href="#slide-4"></a>
-                </div>
-            </div>
+            </section>
         </div>
         <div class="copyright">
             <p>© 2023 All Rights Reserved.</p>
